@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalSolutions | Smart Digital Tools</title>
+    <style>
+        /* --- Design Tokens (From DSM Logo) --- */
+        :root {
+            --primary-blue: #0B2669;
+            --secondary-blue: #00A3E0;
+            --bg-light: #F8FAFC;
+            --text-dark: #1E293B;
+            --text-light: #64748B;
+            --white: #FFFFFF;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* --- Global Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        a { text-decoration: none; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-blue);
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-blue);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            font-size: 14px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, #E2E8F0 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Hexagon Pattern Background */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill='%2300A3E0' fill-opacity='0.05'/%3E%3C/svg%3E");
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero h1 span { color: var(--secondary-blue); }
+        .hero p {
+            font-size: 20px;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        /* --- Products Section --- */
+        .products-section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* --- Product Card --- */
+        .card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .card-category {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--secondary-blue);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .card h3 {
+            font-size: 22px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        .card p {
+            color: var(--text-light);
+            font-size: 15px;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .card-features {
+            list-style: none;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+        .card-features li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .card-features li::before {
+            content: "✓";
+            color: var(--secondary-blue);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        .price span {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+
+        /* --- Buy Button --- */
+        .btn-buy {
+            display: block;
+            text-align: center;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border: 2px solid transparent;
+        }
+        .btn-buy:hover {
+            background-color: var(--secondary-blue);
+        }
+        
+        /* --- Crypto Payment Banner --- */
+        .crypto-banner {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+        .crypto-banner strong {
+            color: var(--secondary-blue);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-light);
+            border-top: 1px solid #E2E8F0;
+            margin-top: 60px;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-area">
+                <div class="logo-icon">DSM</div>
+                DigitalSolutions.
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Smart digital tools, <br><span>built to run for you.</span></h1>
+            <p>MCP Servers · Automation · Templates. Premium digital assets to supercharge your workflow.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Explore Our Products</h2>
+            
+            <div class="grid">
+                
+                <!-- Product 1: MCP Server -->
+                <div class="card">
+                    <div class="card-category">AI & Data > MCP Server</div>
+                    <h3>Lead Enrichment & Cleanup</h3>
+                    <p>Turn a messy company list into clean, structured lead profiles in minutes, without leaving your AI agent (Claude, Cursor).</p>
+                    <ul class="card-features">
+                        <li>Cleans, normalizes & deduplicates data</li>
+                        <li>AI classification via Google Gemini</li>
+                        <li>Complete server code & prompt</li>
+                        <li>Ready-to-use config snippet</li>
+                    </ul>
+                    <div class="price">$19.99 <span>USDC</span></div>
+                    <!-- ضع رابط PayAIon هنا -->
+                    <a href="https://payaion.com/d/wMS50knRXk4R" class="btn-buy" target="_blank">Buy with USDC (Base)</a>
+                </div>
+
+                <!-- Product 2: Cold Email Pack -->
+                <div class="card">
+                    <div class="card-category">AI & Data > Claude Skill</div>
+                    <h3>Cold Email Personalizer</h3>
+                    <p>Tired of copy-paste emails? Drop in your lead list and let Claude draft short, personalized cold emails that actually convert.</p>
+                    <ul class="card-features">
+                        <li>Claude Skill instructions & guides</li>
+                        <li>Lead list cleaner script (Python)</li>
+                        <li>Compliance checklist included</li>
+                        <li>No fake familiarity or made-up facts</li>
+                    </ul>
+                    <div class="price">$19.99 <span>USDC</span></div>
+                    <!-- ضع رابط PayAIon هنا -->
+                    <a href="https://payaion.com/d/cb2U7sqlkynz" class="btn-buy" target="_blank">Buy with USDC (Base)</a>
+                </div>
+
+                <!-- Product 3: Budget Planner -->
+                <div class="card">
+                    <div class="card-category">Lifestyle > Budget Planner</div>
+                    <h3>Monthly Budget Planner Pro</h3>
+                    <p>Take control of your money with a clean, easy-to-use budget planner built on the 50/30/20 rule. Excel & Google Sheets.</p>
+                    <ul class="card-features">
+                        <li>No macros, nothing to install</li>
+                        <li>Track debt payoff & savings goals</li>
+                        <li>Auto-calculating charts & summaries</li>
+                        <li>Mobile & desktop compatible</li>
+                    </ul>
+                    <div class="price">$9.99 <span>USDC</span></div>
+                    <!-- ضع رابط PayAIon هنا -->
+                    <a href="https://payaion.com/d/xqhpzp2vxBH6" class="btn-buy" target="_blank">Buy with USDC (Base)</a>
+                </div>
+
+            </div>
+
+            <!-- Crypto Banner -->
+            <div class="crypto-banner">
+                🔒 <strong>Secure Crypto Checkout:</strong> Payments are processed safely and instantly using USDC on the Base network.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DigitalSolutions (DSM). All rights reserved.</p>
+            <p style="font-size: 12px; margin-top: 10px;">Digital products only. No physical items will be shipped.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
