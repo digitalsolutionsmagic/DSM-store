@@ -121,6 +121,42 @@ header{background:rgba(255,255,255,.9);backdrop-filter:blur(10px);-webkit-backdr
 .os .row small{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:11px;margin-top:3px}
 .os .row small::before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor}
 
+/* new cover art: creators, freelance, e-commerce, reels, sales */
+.cp .mini,.fl .mini,.sb .mini,.sp .mini{width:310px;padding:16px 18px}
+.mini .ttl{font-family:var(--head);font-weight:700;font-size:13px;color:var(--navy);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.mini .ttl em{font-style:normal;font-weight:600;font-size:11px;color:#0E7A50;background:#E2F5EC;padding:2px 9px;border-radius:999px}
+.kp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kp div{background:#F3F8FF;border-radius:10px;padding:9px 11px}
+.kp small{display:block;font-size:11px;color:var(--mute);line-height:1.2}
+.kp b{display:block;font-family:var(--head);font-size:16px;color:var(--navy);line-height:1.3}
+.bars{display:flex;align-items:flex-end;gap:6px;height:54px;margin-top:12px;padding-top:6px;border-top:1px solid var(--line)}
+.bars i{flex:1;border-radius:4px 4px 0 0;background:#C7E0FF}
+.bars i.hi{background:var(--cyan)}
+.fl .frow{display:grid;grid-template-columns:62px 1fr 54px;gap:10px;align-items:center;padding:8px 0;font-size:12.5px;font-weight:600;color:var(--navy)}
+.fl .frow+.frow{border-top:1px solid #EEF2F9}
+.fl .frow .bar{height:9px;border-radius:5px;background:#E7ECF5;overflow:hidden}
+.fl .frow .bar b{display:block;height:100%;border-radius:5px}
+.fl .frow span:last-child{text-align:right}
+.sb .chip2{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;color:#9A5B0B;background:#FFF1DC;padding:3px 10px;border-radius:999px}
+.rl{gap:16px}
+.rl .phone{width:128px;height:232px;border-radius:20px;background:linear-gradient(160deg,#0B2669,#1d5fd1);padding:14px 12px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 16px 30px -14px rgba(11,38,105,.5),0 0 0 4px #fff}
+.rl .phone .day{align-self:flex-start;font-size:11px;font-weight:700;background:var(--cyan-bright);color:var(--navy);padding:3px 10px;border-radius:999px}
+.rl .phone b{font-family:var(--head);font-size:15px;line-height:1.25}
+.rl .phone .sk2{height:7px;border-radius:4px;background:rgba(255,255,255,.28);margin-top:6px}
+.rl .days{padding:10px 12px;display:grid;gap:8px;width:176px}
+.rl .days div{font-size:12px;font-weight:600;color:var(--navy);line-height:1.25}
+.rl .days small{display:block;font-size:10.5px;font-weight:600;color:var(--cyan);text-transform:uppercase;letter-spacing:.04em}
+.sp .srow{display:flex;align-items:center;gap:11px;padding:6px 0;font-size:12.5px;font-weight:600;color:var(--navy)}
+.sp .srow+.srow{border-top:1px solid #EEF2F9}
+.sp .srow i{flex:none;width:22px;height:22px;border-radius:50%;background:var(--navy);color:#fff;font-style:normal;font-size:11px;display:flex;align-items:center;justify-content:center}
+.sp .srow em{margin-left:auto;font-style:normal;color:#0E7A50;font-size:12px}
+@media (max-width:480px){
+  .cp .mini,.fl .mini,.sb .mini,.sp .mini{width:272px}
+  .rl{gap:10px}
+  .rl .phone{width:112px;height:208px}
+  .rl .days{width:150px}
+}
+
 /* how it works */
 .how{padding:72px 0 20px}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
@@ -198,7 +234,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
   <div class="wrap">
     <div class="sec-head">
       <h2>Explore our products</h2>
-      <p>Tools for AI agents, outreach, budgeting and agency work. Each one comes with everything you need to start.</p>
+      <p>Tools for AI agents, outreach, budgeting, creators, e-commerce and sales teams. Each one comes with everything you need to start.</p>
     </div>
 
     <div class="grid">
@@ -312,6 +348,140 @@ footer p+p{font-size:12.5px;margin-top:8px}
           <div class="foot">
             <div class="price">$39 <span>USDC</span></div>
             <a href="https://payaion.com/d/NCW4JONCbL5L" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5: Creator Content Planner & Income Tracker -->
+      <article class="card" id="creator-planner" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art cp">
+          <div class="mini">
+            <div class="ttl">Creator Dashboard<em>Live</em></div>
+            <div class="kp"><div><small>Total income</small><b>$1,384.50</b></div><div><small>Posts published</small><b>12</b></div></div>
+            <div class="bars"><i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:62%"></i><i style="height:52%"></i><i class="hi" style="height:92%"></i></div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Excel / Google Sheets</span><span class="cat">Creators</span><span class="badge-new">New</span></div>
+          <h3>Creator Content Planner &amp; Income Tracker</h3>
+          <p class="desc">Plan your posts and see what your content earns: a content calendar, income tracker and live dashboard in one spreadsheet.</p>
+          <ul class="feat">
+            <li>Content calendar with status colors and automatic engagement rate</li>
+            <li>Income tracker with paid and outstanding payments</li>
+            <li>Dashboard with income by source and a monthly chart</li>
+            <li>Drop-down lists, example rows and a quick-start tab</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$14.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/pJJu5QxbOW7S" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6: Freelancer Finance Tracker Pro -->
+      <article class="card" id="freelancer-tracker" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art fl">
+          <div class="mini">
+            <div class="ttl">This month</div>
+            <div class="frow"><span>Income</span><div class="bar"><b style="width:100%;background:#12A06A"></b></div><span>$4,200</span></div>
+            <div class="frow"><span>Expenses</span><div class="bar"><b style="width:28%;background:#E0434B"></b></div><span>$1,150</span></div>
+            <div class="frow"><span>Net</span><div class="bar"><b style="width:73%;background:var(--navy)"></b></div><span>$3,050</span></div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Excel Template</span><span class="cat">Freelance</span><span class="badge-new">New</span></div>
+          <h3>Freelancer Finance Tracker Pro</h3>
+          <p class="desc">A finance tracker built for freelancers, to keep your income and expenses organized in one workbook.</p>
+          <ul class="feat">
+            <li>Excel workbook, ready to use</li>
+            <li>Files delivered right after payment</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$12.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/NFQA4wsOSjnT" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 7: Smart Business Toolkit Pro -->
+      <article class="card" id="smart-business" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art sb">
+          <div class="mini">
+            <div class="ttl">Smart Business Toolkit Pro</div>
+            <div class="kp"><div><small>Net sales</small><b>$2,480</b></div><div><small>Order profit</small><b>$1,310</b></div><div><small>Expenses</small><b>$184</b></div><div><small>Net profit</small><b>$1,126</b></div></div>
+            <span class="chip2">REORDER: 1 item low on stock</span>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Excel / Google Sheets</span><span class="cat">E-commerce</span><span class="badge-new">New</span></div>
+          <h3>Smart Business Toolkit Pro</h3>
+          <p class="desc">An e-commerce dashboard that turns your orders, expenses and stock into clear profit numbers.</p>
+          <ul class="feat">
+            <li>Net sales, order profit, expenses and net profit for any date range</li>
+            <li>Sales log with prefilled formulas, plus an expense tracker</li>
+            <li>Inventory sheet with stock value and reorder flags</li>
+            <li>Sample data and a quick-start guide</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$24.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/4Xys_aciNf-0" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 8: 30-Day Reels Growth Strategy -->
+      <article class="card" id="reels-bundle" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art rl">
+          <div class="phone"><span class="day">DAY 2</span><div><b>The reusable bag test</b><div class="sk2"></div><div class="sk2" style="width:70%"></div></div></div>
+          <div class="mini days">
+            <div><small>Day 1</small>The plastic intervention</div>
+            <div><small>Day 2</small>The reusable bag test</div>
+            <div><small>Day 3</small>The drawer of doom</div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">PDF Script Bundle</span><span class="cat">Content</span><span class="badge-new">New</span></div>
+          <h3>30-Day Reels Growth Strategy</h3>
+          <p class="desc">30 days of ready-to-film TikTok and Instagram Reels scripts for an eco-friendly e-commerce brand.</p>
+          <ul class="feat">
+            <li>30 hooks and word-for-word scripts, about 15 to 35 seconds each</li>
+            <li>Camera directions and audio ideas for every video</li>
+            <li>Weekly plan: attention, trust, community, then sales</li>
+            <li>Audio strategy and a weekly measurement plan</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$24.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/UQJcWLviLR3m" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 9: Remote Team Onboarding & Sales SOP Playbook -->
+      <article class="card" id="sales-playbook" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art sp">
+          <div class="mini">
+            <div class="ttl">Sales SOP Playbook</div>
+            <div class="srow"><i>1</i>Culture &amp; welcome<em>&#10003;</em></div>
+            <div class="srow"><i>2</i>Daily &amp; weekly workflow<em>&#10003;</em></div>
+            <div class="srow"><i>3</i>Call &amp; email scripts<em>&#10003;</em></div>
+            <div class="srow"><i>4</i>Objection handling<em>&#10003;</em></div>
+            <div class="srow"><i>5</i>KPIs &amp; scorecard<em>&#10003;</em></div>
+            <div class="srow"><i>6</i>30-60-90 day ramp<em>&#10003;</em></div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Playbook + Toolkit</span><span class="cat">Sales</span><span class="badge-new">New</span></div>
+          <h3>Remote Team Onboarding &amp; Sales SOP Playbook</h3>
+          <p class="desc">Everything you need to onboard, train and manage remote sales reps: a finished playbook, an editable Word version and Excel scorecards.</p>
+          <ul class="feat">
+            <li>11 call, email and LinkedIn scripts, plus the ACRA objection framework</li>
+            <li>18 KPIs with targets and automatic scoring in Excel</li>
+            <li>30-60-90 day ramp plan with three gates</li>
+            <li>PDF, editable Word and an objection-handling cheat sheet</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$49 <span>USDC</span></div>
+            <a href="https://payaion.com/d/k1HrjGMZeWJQ" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
           </div>
         </div>
       </article>
