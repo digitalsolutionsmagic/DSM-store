@@ -38,6 +38,10 @@ header{background:rgba(255,255,255,.9);backdrop-filter:blur(10px);-webkit-backdr
 .nav a.link{font-weight:600;font-size:15px;color:var(--navy);padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;transition:border-color .2s,background .2s}
 .nav a.link:hover{border-color:var(--cyan);background:#F0F9FF}
 
+.paynote{margin-top:16px;font-size:15px;color:var(--navy);background:#fff;border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:12px;padding:12px 16px}
+.paynote a{font-weight:600;text-decoration:underline}
+.fine{margin-top:14px;font-size:13px;color:var(--mute);text-align:center}
+
 /* hero */
 .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#EAF3FF 100%);border-bottom:1px solid var(--line)}
 .hero::before{content:'';position:absolute;inset:0;background-image:var(--hex);background-size:72px auto;-webkit-mask-image:radial-gradient(70% 90% at 90% 20%,#000 0%,transparent 75%);mask-image:radial-gradient(70% 90% at 90% 20%,#000 0%,transparent 75%)}
@@ -236,7 +240,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
       <div class="chips"><span>MCP Servers</span><span>Automation</span><span>Templates</span></div>
       <div class="cta-row">
         <a class="btn" href="#products">Browse products</a>
-        <span class="cta-note">Pay with USDC on Base</span>
+        <span class="cta-note">Pay with USDC on Base &middot; <a href="#how" style="color:var(--navy);font-weight:600;text-decoration:underline">how to pay</a></span>
       </div>
     </div>
     <div class="comb" aria-hidden="true">
@@ -253,6 +257,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
     <div class="sec-head">
       <h2>Explore our products</h2>
       <p>Printable planners, tools for AI agents, outreach, budgeting, creators, e-commerce and sales teams. Each one comes with everything you need to start.</p>
+      <p class="paynote">Checkout is in USDC on Base and needs a crypto wallet. New to this? <a href="#how">See how to pay in 3 steps.</a></p>
     </div>
 
     <div class="grid">
@@ -342,7 +347,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
       </article>
 
       <!-- Product 1: MCP Server -->
-      <article class="card">
+      <article class="card" id="lead-enrichment" style="scroll-margin-top:90px">
         <div class="cover"><div class="art leads">
           <div class="mini messy"><span>acme corp inc.</span><span>ACME CORP</span><span>acme.com </span></div>
           <svg class="arrow" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="#0B2669"/><path d="M10 17h13m-5-5 5 5-5 5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -366,7 +371,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
       </article>
 
       <!-- Product 2: Cold Email Pack -->
-      <article class="card">
+      <article class="card" id="cold-email" style="scroll-margin-top:90px">
         <div class="cover"><div class="art mail">
           <div class="mini">
             <div class="subj"><span>Subject:</span><small>A quick question</small></div>
@@ -393,7 +398,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
       </article>
 
       <!-- Product 3: Budget Planner -->
-      <article class="card">
+      <article class="card" id="budget-planner" style="scroll-margin-top:90px">
         <div class="cover"><div class="art plan">
           <svg class="donut" viewBox="0 0 120 120" aria-hidden="true">
             <circle cx="60" cy="60" r="42" fill="#fff"/>
@@ -594,15 +599,16 @@ footer p+p{font-size:12.5px;margin-top:8px}
   </div>
 </section>
 
-<section class="how">
+<section class="how" id="how" style="scroll-margin-top:90px">
   <div class="wrap">
-    <div class="sec-head" style="margin-bottom:30px"><h2>How buying works</h2></div>
+    <div class="sec-head" style="margin-bottom:30px"><h2>How to pay, step by step</h2></div>
     <div class="steps">
-      <div class="step"><h3>Pick a product</h3><p>Choose the tool you need and open its checkout.</p></div>
-      <div class="step"><h3>Pay with USDC</h3><p>Pay on the Base network through a secure crypto checkout.</p></div>
-      <div class="step"><h3>Get your files</h3><p>Your files are delivered right after payment.</p></div>
+      <div class="step"><h3>Get a free wallet</h3><p>Install a crypto wallet such as Coinbase Wallet, MetaMask or Rainbow on your phone or browser.</p></div>
+      <div class="step"><h3>Add USDC on Base</h3><p>Buy USDC inside your wallet (by card or bank, where your wallet offers it) or send it from an exchange. Choose the Base network when you send.</p></div>
+      <div class="step"><h3>Press Buy and approve</h3><p>Connect your wallet on the checkout page and approve the payment. Your files unlock right after.</p></div>
     </div>
     <div class="banner">🔒 <strong>Secure Crypto Checkout:</strong> Payments are processed safely and instantly using USDC on the Base network.</div>
+    <p class="fine">Digital goods. Payments settle on-chain and are final, so read the product details first. Depending on your wallet, you may need a few cents of ETH on Base for network fees.</p>
   </div>
 </section>
 
