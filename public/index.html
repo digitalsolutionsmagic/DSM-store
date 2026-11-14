@@ -71,6 +71,9 @@ header{background:rgba(255,255,255,.9);backdrop-filter:blur(10px);-webkit-backdr
 .sec-head h2{font-family:var(--head);font-weight:700;font-size:38px;letter-spacing:-.03em;line-height:1.12;color:var(--navy)}
 .sec-head p{margin-top:12px;font-size:18px;color:var(--mute)}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.subhead{grid-column:1/-1;margin-top:8px}
+.subhead h3{font-family:var(--head);font-weight:700;font-size:26px;letter-spacing:-.02em;color:var(--navy)}
+.subhead p{color:var(--mute);font-size:16px;margin-top:4px}
 .card{background:#fff;border-radius:24px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(11,38,105,.04),0 18px 40px -24px rgba(11,38,105,.28);transition:transform .25s,box-shadow .25s}
 .card:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(11,38,105,.04),0 28px 50px -24px rgba(11,38,105,.38)}
 .cover{position:relative;min-height:262px;padding:24px 0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#EAF3FF 0%,#D6E8FF 100%);overflow:hidden;border-bottom:1px solid var(--line)}
@@ -236,7 +239,7 @@ footer p+p{font-size:12.5px;margin-top:8px}
   <div class="wrap">
     <div>
       <h1>Smart digital tools, built to run for you.</h1>
-      <p class="lead">Premium digital assets to supercharge your workflow. Pay once, get your files right away.</p>
+      <p class="lead">Tools for AI agents, freelancers and small teams. Pay once in USDC on Base and get your files right away.</p>
       <div class="chips"><span>MCP Servers</span><span>Automation</span><span>Templates</span></div>
       <div class="cta-row">
         <a class="btn" href="#products">Browse products</a>
@@ -256,95 +259,13 @@ footer p+p{font-size:12.5px;margin-top:8px}
   <div class="wrap">
     <div class="sec-head">
       <h2>Explore our products</h2>
-      <p>Printable planners, tools for AI agents, outreach, budgeting, creators, e-commerce and sales teams. Each one comes with everything you need to start.</p>
+      <p>Tools for AI agents, outreach, invoicing, agencies and e-commerce, plus printable planners. Each one comes with everything you need to start.</p>
       <p class="paynote">Checkout is in USDC on Base and needs a crypto wallet. New to this? <a href="#how">See how to pay in 3 steps.</a></p>
     </div>
 
     <div class="grid">
 
-      <!-- Product: Printable Budget Binder -->
-      <article class="card" id="budget-binder" style="scroll-margin-top:90px">
-        <div class="cover"><div class="art fl">
-          <div class="mini">
-            <div class="ttl">Budget Binder<em>Printable</em></div>
-            <div class="frow"><span>Savings</span><div class="bar"><b style="width:38%;background:#12A06A"></b></div><span>52 wk</span></div>
-            <div class="frow"><span>Debt</span><div class="bar"><b style="width:62%;background:var(--navy)"></b></div><span>Snowball</span></div>
-            <div class="frow"><span>Bills</span><div class="bar"><b style="width:85%;background:var(--cyan)"></b></div><span>Tracker</span></div>
-          </div>
-        </div></div>
-        <div class="body">
-          <div class="meta"><span class="tag">Printable PDF</span><span class="cat">Lifestyle</span><span class="badge-new">New</span></div>
-          <h3>Printable Budget Binder</h3>
-          <p class="desc">A 30-page printable budget system: monthly budget, bill tracker, debt snowball and savings challenges. Print it or use it in GoodNotes.</p>
-          <ul class="feat">
-            <li>30 pages in US Letter and A4</li>
-            <li>52-week and 100-envelope savings challenges</li>
-            <li>Bill tracker, debt snowball and cash envelopes</li>
-            <li>Works with any currency</li>
-          </ul>
-          <div class="foot">
-            <div class="price">$9.99 <span>USDC</span></div>
-            <a href="https://payaion.com/d/_h6LU3wdyZnG" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Product: Meal Planner & Recipe Binder -->
-      <article class="card" id="meal-planner" style="scroll-margin-top:90px">
-        <div class="cover"><div class="art sp">
-          <div class="mini">
-            <div class="ttl">Dinner this week<em>Printable</em></div>
-            <div class="srow"><i>M</i>Meatless Monday<em>Mon</em></div>
-            <div class="srow"><i>T</i>Taco night<em>Tue</em></div>
-            <div class="srow"><i>W</i>Pasta night<em>Wed</em></div>
-          </div>
-        </div></div>
-        <div class="body">
-          <div class="meta"><span class="tag">Printable PDF</span><span class="cat">Lifestyle</span><span class="badge-new">New</span></div>
-          <h3>Meal Planner &amp; Recipe Binder</h3>
-          <p class="desc">Plan the week, shop faster and keep your best recipes in one printable binder. Print it or use it in GoodNotes.</p>
-          <ul class="feat">
-            <li>31 pages in US Letter and A4</li>
-            <li>Weekly and monthly meal planners</li>
-            <li>Grocery list by aisle and an 80-item staples checklist</li>
-            <li>Pantry, freezer and recipe pages</li>
-          </ul>
-          <div class="foot">
-            <div class="price">$9.99 <span>USDC</span></div>
-            <a href="https://payaion.com/d/fFNQ1PLY3Yyk" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card" id="cash-visibility" style="scroll-margin-top:90px">
-        <div class="cover"><div class="art sb">
-          <div class="mini">
-            <div class="ttl">Cash Dashboard<em>Demo data</em></div>
-            <div class="kp">
-              <div><small>Outstanding</small><b>$2,390</b></div>
-              <div><small>Overdue</small><b>$1,750</b></div>
-              <div><small>Opening cash</small><b>$5,000</b></div>
-              <div><small>Lowest cash</small><b>$5,250</b></div>
-            </div>
-            <div class="bars"><i style="height:30%"></i><i style="height:38%"></i><i style="height:34%"></i><i style="height:46%"></i><i style="height:42%"></i><i style="height:52%"></i><i style="height:48%"></i><i class="hi" style="height:60%"></i><i style="height:56%"></i><i style="height:66%"></i><i style="height:62%"></i><i class="hi" style="height:72%"></i><i style="height:68%"></i></div>
-          </div>
-        </div></div>
-        <div class="body">
-          <div class="meta"><span class="tag">Excel Template</span><span class="cat">Freelance</span><span class="badge-new">New</span></div>
-          <h3>Get Paid &amp; Stay Ready</h3>
-          <p class="desc">Invoice follow-up and 13-week cash visibility kit: track unpaid invoices, see overdue balances and spot cash gaps early.</p>
-          <ul class="feat">
-            <li>200-row invoice tracker with automatic balances</li>
-            <li>13-week cash forecast with buffer warnings</li>
-            <li>8 editable payment follow-up emails</li>
-            <li>Blank and demo workbooks plus a quick-start PDF</li>
-          </ul>
-          <div class="foot">
-            <div class="price">$9.99 <span>USDC</span></div>
-            <a href="https://payaion.com/m/wDE35mjpYBQF" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
-          </div>
-        </div>
-      </article>
+      <div class="subhead"><h3>AI tools, outreach and business templates</h3><p>For AI builders, freelancers, agencies and online sellers.</p></div>
 
       <!-- Product 1: MCP Server -->
       <article class="card" id="lead-enrichment" style="scroll-margin-top:90px">
@@ -397,38 +318,32 @@ footer p+p{font-size:12.5px;margin-top:8px}
         </div>
       </article>
 
-      <!-- Product 3: Budget Planner -->
-      <article class="card" id="budget-planner" style="scroll-margin-top:90px">
-        <div class="cover"><div class="art plan">
-          <svg class="donut" viewBox="0 0 120 120" aria-hidden="true">
-            <circle cx="60" cy="60" r="42" fill="#fff"/>
-            <g fill="none" stroke-width="20" transform="rotate(-90 60 60)">
-              <circle cx="60" cy="60" r="42" stroke="#0B2669" stroke-dasharray="131.95 263.9"/>
-              <circle cx="60" cy="60" r="42" stroke="#00A3E0" stroke-dasharray="79.17 263.9" stroke-dashoffset="-131.95"/>
-              <circle cx="60" cy="60" r="42" stroke="#7FD3FA" stroke-dasharray="52.78 263.9" stroke-dashoffset="-211.12"/>
-            </g>
-            <circle cx="60" cy="60" r="32" fill="#fff"/>
-            <text x="60" y="66" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="700" font-size="12" fill="#0B2669">50/30/20</text>
-          </svg>
-          <div class="mini legend">
-            <div><i style="background:#0B2669"></i>Needs<em>50%</em></div>
-            <div><i style="background:#00A3E0"></i>Wants<em>30%</em></div>
-            <div><i style="background:#7FD3FA"></i>Savings<em>20%</em></div>
+      <article class="card" id="cash-visibility" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art sb">
+          <div class="mini">
+            <div class="ttl">Cash Dashboard<em>Demo data</em></div>
+            <div class="kp">
+              <div><small>Outstanding</small><b>$2,390</b></div>
+              <div><small>Overdue</small><b>$1,750</b></div>
+              <div><small>Opening cash</small><b>$5,000</b></div>
+              <div><small>Lowest cash</small><b>$5,250</b></div>
+            </div>
+            <div class="bars"><i style="height:30%"></i><i style="height:38%"></i><i style="height:34%"></i><i style="height:46%"></i><i style="height:42%"></i><i style="height:52%"></i><i style="height:48%"></i><i class="hi" style="height:60%"></i><i style="height:56%"></i><i style="height:66%"></i><i style="height:62%"></i><i class="hi" style="height:72%"></i><i style="height:68%"></i></div>
           </div>
         </div></div>
         <div class="body">
-          <div class="meta"><span class="tag">Budget Planner</span><span class="cat">Lifestyle</span></div>
-          <h3>Monthly Budget Planner Pro</h3>
-          <p class="desc">Take control of your money with a clean, easy-to-use budget planner built on the 50/30/20 rule. Excel &amp; Google Sheets.</p>
+          <div class="meta"><span class="tag">Excel Template</span><span class="cat">Freelance</span><span class="badge-new">New</span></div>
+          <h3>Get Paid &amp; Stay Ready</h3>
+          <p class="desc">Invoice follow-up and 13-week cash visibility kit: track unpaid invoices, see overdue balances and spot cash gaps early.</p>
           <ul class="feat">
-            <li>No macros, nothing to install</li>
-            <li>Track debt payoff &amp; savings goals</li>
-            <li>Auto-calculating charts &amp; summaries</li>
-            <li>Mobile &amp; desktop compatible</li>
+            <li>200-row invoice tracker with automatic balances</li>
+            <li>13-week cash forecast with buffer warnings</li>
+            <li>8 editable payment follow-up emails</li>
+            <li>Blank and demo workbooks plus a quick-start PDF</li>
           </ul>
           <div class="foot">
             <div class="price">$9.99 <span>USDC</span></div>
-            <a href="https://payaion.com/d/ZecHUMBMZeCs" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+            <a href="https://payaion.com/m/wDE35mjpYBQF" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
           </div>
         </div>
       </article>
@@ -455,32 +370,6 @@ footer p+p{font-size:12.5px;margin-top:8px}
           <div class="foot">
             <div class="price">$39 <span>USDC</span></div>
             <a href="https://payaion.com/d/NCW4JONCbL5L" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Product 5: Creator Content Planner & Income Tracker -->
-      <article class="card" id="creator-planner" style="scroll-margin-top:90px">
-        <div class="cover"><div class="art cp">
-          <div class="mini">
-            <div class="ttl">Creator Dashboard<em>Live</em></div>
-            <div class="kp"><div><small>Total income</small><b>$1,384.50</b></div><div><small>Posts published</small><b>12</b></div></div>
-            <div class="bars"><i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:62%"></i><i style="height:52%"></i><i class="hi" style="height:92%"></i></div>
-          </div>
-        </div></div>
-        <div class="body">
-          <div class="meta"><span class="tag">Excel / Google Sheets</span><span class="cat">Creators</span><span class="badge-new">New</span></div>
-          <h3>Creator Content Planner &amp; Income Tracker</h3>
-          <p class="desc">Plan your posts and see what your content earns: a content calendar, income tracker and live dashboard in one spreadsheet.</p>
-          <ul class="feat">
-            <li>Content calendar with status colors and automatic engagement rate</li>
-            <li>Income tracker with paid and outstanding payments</li>
-            <li>Dashboard with income by source and a monthly chart</li>
-            <li>Drop-down lists, example rows and a quick-start tab</li>
-          </ul>
-          <div class="foot">
-            <div class="price">$14.99 <span>USDC</span></div>
-            <a href="https://payaion.com/d/pJJu5QxbOW7S" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
           </div>
         </div>
       </article>
@@ -538,29 +427,28 @@ footer p+p{font-size:12.5px;margin-top:8px}
         </div>
       </article>
 
-      <!-- Product 8: 30-Day Reels Growth Strategy -->
-      <article class="card" id="reels-bundle" style="scroll-margin-top:90px">
-        <div class="cover"><div class="art rl">
-          <div class="phone"><span class="day">DAY 2</span><div><b>The reusable bag test</b><div class="sk2"></div><div class="sk2" style="width:70%"></div></div></div>
-          <div class="mini days">
-            <div><small>Day 1</small>The plastic intervention</div>
-            <div><small>Day 2</small>The reusable bag test</div>
-            <div><small>Day 3</small>The drawer of doom</div>
+      <!-- Product 5: Creator Content Planner & Income Tracker -->
+      <article class="card" id="creator-planner" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art cp">
+          <div class="mini">
+            <div class="ttl">Creator Dashboard<em>Live</em></div>
+            <div class="kp"><div><small>Total income</small><b>$1,384.50</b></div><div><small>Posts published</small><b>12</b></div></div>
+            <div class="bars"><i style="height:30%"></i><i style="height:45%"></i><i style="height:38%"></i><i style="height:62%"></i><i style="height:52%"></i><i class="hi" style="height:92%"></i></div>
           </div>
         </div></div>
         <div class="body">
-          <div class="meta"><span class="tag">PDF Script Bundle</span><span class="cat">Content</span><span class="badge-new">New</span></div>
-          <h3>30-Day Reels Growth Strategy</h3>
-          <p class="desc">30 days of ready-to-film TikTok and Instagram Reels scripts for an eco-friendly e-commerce brand.</p>
+          <div class="meta"><span class="tag">Excel / Google Sheets</span><span class="cat">Creators</span><span class="badge-new">New</span></div>
+          <h3>Creator Content Planner &amp; Income Tracker</h3>
+          <p class="desc">Plan your posts and see what your content earns: a content calendar, income tracker and live dashboard in one spreadsheet.</p>
           <ul class="feat">
-            <li>30 hooks and word-for-word scripts, about 15 to 35 seconds each</li>
-            <li>Camera directions and audio ideas for every video</li>
-            <li>Weekly plan: attention, trust, community, then sales</li>
-            <li>Audio strategy and a weekly measurement plan</li>
+            <li>Content calendar with status colors and automatic engagement rate</li>
+            <li>Income tracker with paid and outstanding payments</li>
+            <li>Dashboard with income by source and a monthly chart</li>
+            <li>Drop-down lists, example rows and a quick-start tab</li>
           </ul>
           <div class="foot">
-            <div class="price">$24.99 <span>USDC</span></div>
-            <a href="https://payaion.com/d/UQJcWLviLR3m" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+            <div class="price">$14.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/pJJu5QxbOW7S" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
           </div>
         </div>
       </article>
@@ -591,6 +479,125 @@ footer p+p{font-size:12.5px;margin-top:8px}
           <div class="foot">
             <div class="price">$49 <span>USDC</span></div>
             <a href="https://payaion.com/d/k1HrjGMZeWJQ" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 8: 30-Day Reels Growth Strategy -->
+      <article class="card" id="reels-bundle" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art rl">
+          <div class="phone"><span class="day">DAY 2</span><div><b>The reusable bag test</b><div class="sk2"></div><div class="sk2" style="width:70%"></div></div></div>
+          <div class="mini days">
+            <div><small>Day 1</small>The plastic intervention</div>
+            <div><small>Day 2</small>The reusable bag test</div>
+            <div><small>Day 3</small>The drawer of doom</div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">PDF Script Bundle</span><span class="cat">Content</span><span class="badge-new">New</span></div>
+          <h3>30-Day Reels Growth Strategy</h3>
+          <p class="desc">30 days of ready-to-film TikTok and Instagram Reels scripts for an eco-friendly e-commerce brand.</p>
+          <ul class="feat">
+            <li>30 hooks and word-for-word scripts, about 15 to 35 seconds each</li>
+            <li>Camera directions and audio ideas for every video</li>
+            <li>Weekly plan: attention, trust, community, then sales</li>
+            <li>Audio strategy and a weekly measurement plan</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$24.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/UQJcWLviLR3m" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="subhead"><h3>Printables and planners</h3><p>Print-and-use binders and a simple budget planner.</p></div>
+
+      <!-- Product: Printable Budget Binder -->
+      <article class="card" id="budget-binder" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art fl">
+          <div class="mini">
+            <div class="ttl">Budget Binder<em>Printable</em></div>
+            <div class="frow"><span>Savings</span><div class="bar"><b style="width:38%;background:#12A06A"></b></div><span>52 wk</span></div>
+            <div class="frow"><span>Debt</span><div class="bar"><b style="width:62%;background:var(--navy)"></b></div><span>Snowball</span></div>
+            <div class="frow"><span>Bills</span><div class="bar"><b style="width:85%;background:var(--cyan)"></b></div><span>Tracker</span></div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Printable PDF</span><span class="cat">Lifestyle</span><span class="badge-new">New</span></div>
+          <h3>Printable Budget Binder</h3>
+          <p class="desc">A 30-page printable budget system: monthly budget, bill tracker, debt snowball and savings challenges. Print it or use it in GoodNotes.</p>
+          <ul class="feat">
+            <li>30 pages in US Letter and A4</li>
+            <li>52-week and 100-envelope savings challenges</li>
+            <li>Bill tracker, debt snowball and cash envelopes</li>
+            <li>Works with any currency</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$9.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/_h6LU3wdyZnG" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product: Meal Planner & Recipe Binder -->
+      <article class="card" id="meal-planner" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art sp">
+          <div class="mini">
+            <div class="ttl">Dinner this week<em>Printable</em></div>
+            <div class="srow"><i>M</i>Meatless Monday<em>Mon</em></div>
+            <div class="srow"><i>T</i>Taco night<em>Tue</em></div>
+            <div class="srow"><i>W</i>Pasta night<em>Wed</em></div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Printable PDF</span><span class="cat">Lifestyle</span><span class="badge-new">New</span></div>
+          <h3>Meal Planner &amp; Recipe Binder</h3>
+          <p class="desc">Plan the week, shop faster and keep your best recipes in one printable binder. Print it or use it in GoodNotes.</p>
+          <ul class="feat">
+            <li>31 pages in US Letter and A4</li>
+            <li>Weekly and monthly meal planners</li>
+            <li>Grocery list by aisle and an 80-item staples checklist</li>
+            <li>Pantry, freezer and recipe pages</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$9.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/fFNQ1PLY3Yyk" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3: Budget Planner -->
+      <article class="card" id="budget-planner" style="scroll-margin-top:90px">
+        <div class="cover"><div class="art plan">
+          <svg class="donut" viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="60" r="42" fill="#fff"/>
+            <g fill="none" stroke-width="20" transform="rotate(-90 60 60)">
+              <circle cx="60" cy="60" r="42" stroke="#0B2669" stroke-dasharray="131.95 263.9"/>
+              <circle cx="60" cy="60" r="42" stroke="#00A3E0" stroke-dasharray="79.17 263.9" stroke-dashoffset="-131.95"/>
+              <circle cx="60" cy="60" r="42" stroke="#7FD3FA" stroke-dasharray="52.78 263.9" stroke-dashoffset="-211.12"/>
+            </g>
+            <circle cx="60" cy="60" r="32" fill="#fff"/>
+            <text x="60" y="66" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="700" font-size="12" fill="#0B2669">50/30/20</text>
+          </svg>
+          <div class="mini legend">
+            <div><i style="background:#0B2669"></i>Needs<em>50%</em></div>
+            <div><i style="background:#00A3E0"></i>Wants<em>30%</em></div>
+            <div><i style="background:#7FD3FA"></i>Savings<em>20%</em></div>
+          </div>
+        </div></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Budget Planner</span><span class="cat">Lifestyle</span></div>
+          <h3>Monthly Budget Planner Pro</h3>
+          <p class="desc">Take control of your money with a clean, easy-to-use budget planner built on the 50/30/20 rule. Excel &amp; Google Sheets.</p>
+          <ul class="feat">
+            <li>No macros, nothing to install</li>
+            <li>Track debt payoff &amp; savings goals</li>
+            <li>Auto-calculating charts &amp; summaries</li>
+            <li>Mobile &amp; desktop compatible</li>
+          </ul>
+          <div class="foot">
+            <div class="price">$9.99 <span>USDC</span></div>
+            <a href="https://payaion.com/d/ZecHUMBMZeCs" class="btn-buy" target="_blank" rel="noopener">Buy with USDC (Base)</a>
           </div>
         </div>
       </article>
@@ -664,5 +671,27 @@ footer p+p{font-size:12.5px;margin-top:8px}
   </div>
 </footer>
 
+<script>
+/* Disable a Buy button once its Payaion link has expired (links last 28 days). Update EXP when a link is renewed. */
+(function(){
+  var EXP={
+ "https://payaion.com/d/NCW4JONCbL5L": "2026-11-16T14:52:00Z",
+ "https://payaion.com/d/pJJu5QxbOW7S": "2026-11-17T15:26:00Z",
+ "https://payaion.com/d/NFQA4wsOSjnT": "2026-11-17T15:31:00Z",
+ "https://payaion.com/d/4Xys_aciNf-0": "2026-11-17T15:34:00Z",
+ "https://payaion.com/d/UQJcWLviLR3m": "2026-11-17T15:37:00Z",
+ "https://payaion.com/d/k1HrjGMZeWJQ": "2026-11-17T15:43:00Z",
+ "https://payaion.com/d/cb2U7sqlkynz": "2026-11-22T22:35:00Z",
+ "https://payaion.com/d/fFNQ1PLY3Yyk": "2026-12-07T06:43:00Z",
+ "https://payaion.com/d/_h6LU3wdyZnG": "2026-12-07T06:47:00Z",
+ "https://payaion.com/d/ZecHUMBMZeCs": "2026-12-07T06:51:00Z"
+};
+  var now=Date.now();
+  document.querySelectorAll("a.btn-buy[href]").forEach(function(a){
+    var e=EXP[a.getAttribute("href")];
+    if(e && now>Date.parse(e)-300000){a.removeAttribute("href");a.classList.add("off");a.textContent="Temporarily unavailable";}
+  });
+})();
+</script>
 </body>
 </html>
